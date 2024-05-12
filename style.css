@@ -1,0 +1,33 @@
+
+button{ 
+    width: 100px;
+    height: 60px;
+    border:1px solid #83c71e;
+    background-color: #83c71e;
+    color: #ffff;
+    border-radius: 5px;
+    font-size: 20px;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-delay: -2s;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes move{
+  0%{
+    transform: translate(0px) rotate(360deg) ;
+    background-color: #83c71e;
+  }
+  50%{
+    transform: translate(100px) rotate(60deg);
+    background-color: #1260ae;
+    left: 300px;
+  }
+  100%{
+    transform: translate(0px) rotate(50deg);
+    background-color: #83c71e;
+  
+  } 
+}
